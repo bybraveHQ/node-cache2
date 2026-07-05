@@ -1,0 +1,58 @@
+{
+  "name": "@bybrave/node-cache2",
+  "version": "6.0.0",
+  "description": "Maintained node-cache fork: rewritten from CoffeeScript to modern ESM, zero runtime dependencies, Map-backed storage, generic TypeScript types. Drop-in for node-cache.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "dist/"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test",
+    "test-types": "tsc --strict --noEmit --moduleResolution bundler --target es2020 --types node test/types.ts",
+    "prepublishOnly": "npm run build && npm test && npm run test-types"
+  },
+  "keywords": [
+    "cache",
+    "caching",
+    "memory",
+    "in-memory",
+    "ttl",
+    "memcached",
+    "esm",
+    "typescript"
+  ],
+  "author": "bybrave",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/node-cache2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/node-cache2/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/node-cache2#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
