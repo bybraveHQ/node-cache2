@@ -1,6 +1,6 @@
 {
   "name": "@bybrave/node-cache2",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Maintained node-cache fork: rewritten from CoffeeScript to modern ESM, zero runtime dependencies, Map-backed storage, generic TypeScript types. Drop-in for node-cache.",
   "type": "module",
   "main": "./dist/index.cjs",
