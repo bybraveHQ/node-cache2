@@ -70,6 +70,15 @@ The public API and option defaults are unchanged. Notes for edge cases:
 - `keys()` still returns strings, and numeric/string keys still address the same entry (`set(5, …)` then `get('5')`), matching the original object-backed behaviour.
 - With `useClones: true` (the default), values are deep-cloned with the vendored `clone`, so objects with methods, circular references, `Map`/`Set`/`Date`/`RegExp`/`Buffer` all clone the same way as before.
 
+## Support
+
+If this package saves you time, you can support maintenance:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/bybrave)
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-F7931A?logo=bitcoin&logoColor=white)](#support)
+
+Bitcoin (BTC): `bc1q37557q5jpeaxqydzwvf3jgj7zhnfpn2td3q40q`
+
 ## License
 
 MIT. Copyright © mpneuried; vendored clone © Paul Vorbach, Blake Miner; fork © bybrave.
